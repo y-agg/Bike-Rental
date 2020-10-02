@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="footer.css">
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<link rel="stylesheet" type="text/css" href="Bking.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow|Roboto" rel="stylesheet">
+
+
+<script  src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(window).on('scroll',function(){
+  if($(window).scrollTop()){
+    $('nav').addClass('black');
+  }
+  else{
+    $('nav').removeClass('black')
+  }
+
+  } )   
+  </script>
+<script type="text/javascript">
+
+ obj = new Array();
+	function remove() {
+		var tag2=document.getElementById('Help');
+		var tag=document.getElementById('right');		
+		tag.parentNode.removeChild(tag);
+		tag2.classList.remove("linex");
+	}
+function getQueryVariable(variable)
+{ 
+
+
+      var query = window.location.search.substring(1);
+        vars = query.split("&");
+       for (var i=0;i<vars.length;i++) 
+       {       var pair = vars[i].split("=");
+               obj[i]=pair[1];
+       }       
+}
+	window.onload = (event) => {
+		getQueryVariable();
+
+var tag1=document.getElementById('d1');
+tag1.innerHTML=obj[1];
+document.getElementById("d11").value = obj[1];
+
+var tag2=document.getElementById('d2');
+var temp="";
+var t=obj[2].slice(0,2);
+temp=temp+t+":";
+t=obj[2].slice(5,7);
+temp=temp+t+":00"; 		  
+tag2.innerHTML=temp;
+document.getElementById("d22").value = temp;
+ 		
+var tag3=document.getElementById('d3');
+tag3.innerHTML=obj[3];
+document.getElementById("d33").value = obj[3];
+ 		 
+var tag4=document.getElementById('d4');
+var temp2="";
+var t=obj[4].slice(0,2);
+temp2=temp2+t+":";
+t=obj[4].slice(5,7);
+temp2=temp2+t; 		 
+tag4.innerHTML=temp2;
+document.getElementById("d44").value = temp2;
+
+ var tag0=document.getElementById('d0');
+ tag0.innerHTML=obj[0];
+ document.getElementById("d00").value = obj[0];
+dispDiv(obj[0]);
+};
+
+function dispDiv( type) {
+
+if(type=="Hourly")
+{
+var tag=document.getElementById('pbox1');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox2');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox3');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox4');
+tag.classList.toggle("visibili");
+
+var tag=document.getElementById('pbox5');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox6');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox7');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox8');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox9');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox10');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox11');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox12');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox13');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox14');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox15');
+tag.parentNode.removeChild(tag);
+
+}
+
+if(type=="Daily")
+{
+var tag=document.getElementById('pbox5');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox6');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox7');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox8');
+tag.classList.toggle("visibili");
+
+var tag=document.getElementById('pbox1');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox2');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox3');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox4');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox9');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox10');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox11');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox12');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox13');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox14');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox15');
+tag.parentNode.removeChild(tag);
+
+}
+
+if(type=="Weekely")
+{
+var tag=document.getElementById('pbox9');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox10');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox11');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox15');
+tag.classList.toggle("visibili");
+
+var tag=document.getElementById('pbox1');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox2');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox3');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox4');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox5');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox6');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox7');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox8');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox12');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox13');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox14');
+tag.parentNode.removeChild(tag);
+}
+
+if(type=="Monthly")
+{
+var tag=document.getElementById('pbox12');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox13');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox14');
+tag.classList.toggle("visibili");
+var tag=document.getElementById('pbox16');
+tag.classList.toggle("visibili");
+
+var tag=document.getElementById('pbox1');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox2');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox3');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox4');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox5');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox6');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox7');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox8');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox9');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox10');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox11');
+tag.parentNode.removeChild(tag);
+var tag=document.getElementById('pbox15');
+tag.parentNode.removeChild(tag);
+}
+}
+</script>
+
+
+	<title>BooKing bike</title>
+</head>
+<body style="font-family: 'PT Sans Narrow', sans-serif!important;">
+<nav>
+
+         <ul class="u1"  >
+          <li><a href="#"><img style="height: 70px;width:200px;margin-left: -100px;margin-top: 0px;  " src="http://www.extremebiketrip.com/images/logo.png"></a></li>       </ul>
+        <ul class="navu">
+          <li class="li"><a  href="Homepage.html" style="color: white;">Home</a></li>
+          <li class="li"><a href="about.html"style="color: white;">About</a></li>
+          <li class="li"><a href="booking.html"style="color: white;">Booking</a></li>
+          
+          <li class="li"><a href="FAQ.html"style="color: white;">FAQs</a></li>
+          <li class="li"><a href="ContactUs.html"style="color: white;">Contact</a></li>
+
+          <li ><a class="new" href="NewLogin.html" style="margin-left: 40px ;">login</a></li>
+          <li ><a class="new" href="Sign-up.html" style="margin-left: 20px; margin-right: -60px">Signup</a></li>
+        </ul>
+ 
+ </nav>
+
+<br><br><br><br><br><br>
+<div class="nw-filtersty001 c-data" style="margin-left: -2px">
+    <h1 class="hey">Planning to rent bike in Delhi ? </h1><br>
+    <small>Bike Displayed On your Search basics ! </small><br><br>
+    <p class="txtsrhDt" id="right"><label>Your search:</label>
+     
+     <span style="border: #bbb solid 1px; margin-left: 4px; padding: 5px; margin-right: 10px;">Time:
+     <span id="d0">Time</span>
+     </span>
+     <span style="border: #bbb solid 1px; margin-left: 4px;padding: 5px;margin-right: 10px;  ">Starting Date:
+     <span id="d1">Starting Date</span>
+     </span>
+     <span> </span>
+ 	 <span style="border: #bbb solid 1px;margin-left: 4px;padding: 5px;margin-right: 10px; "> Starting Time:
+ 	 <span id="d2"><strong>Starting Time </strong></span> 
+ 	 </span>
+ 	 <span style="border: #bbb solid 1px;margin-left: 4px;padding: 5px; margin-right: 10px;"> Ending Date:
+ 	 <span id="d3"> - Ending Date </span>
+ 	 </span>
+ 	 <span>  </span>
+ 	 <span style="border: #bbb solid 1px;margin-left: 4px;padding: 5px;margin-right: 10px; ">Ending Time:
+ 	 <span id="d4"> <strong>Ending Time </strong></span> 
+ 	 </span>
+ 	 <button onclick="remove()" id="loop">MODIFY</button>
+ 	</p>
+ 	<div class="line linex" id="Help"> 
+ 		<form>
+ 			<form action="Booking.html" method="get">
+  Time: 
+ <SELECT name="time" id="d00">
+ 	<option value="Hourly">Hourly</option>
+ 	<option value="Daily">Daily</option>
+ 	<option value="Weekely">Weekely</option>
+ 	<option value="Monthly">Monthly</option>
+ </SELECT>				
+  Starting date	<input type="Date" name="SDate" id="d11" >
+  Starting time	<input type="time" name="STime" id="d22">
+  Ending date	<input type="Date" name="EDate" id="d33">
+  Ending time	<input type="time" name="ETime" id="d44">
+  <input  type="submit" value="Submit" id="subtn">
+</form> 
+ 		</form>
+ 	</div>
+</div>
+<br><br>
+
+<div class="product-box1 visibili" id="pbox1" >
+	<div class="img">
+	<img class="element" src="https://auto.ndtvimg.com/bike-images/colors/hero/glamour-fi/hero-glamour-fi-techno-blue.png?v=15"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Glamour</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 25.00<small>/hour</small></p>
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">07:00 AM</span> - 
+		<span title="Closing time" class="time">10:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 25.00/hour</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 2000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+	
+</div>
+
+<div class="product-box1 visibili" id="pbox2" style="margin-left: 100px">
+	<div class="img">
+	<img  src="https://auto.ndtvimg.com/bike-images/colors/royal-enfield/classic-350/royal-enfield-classic-350-lagoon.png?v=30"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Classic 350</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 42.00<small>/hour</small></p>
+
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">09:00 AM</span> - 
+		<span title="Closing time" class="time">09:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 42.00/hour</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 5000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="Classic 350.html"  rel="">Book</a></div>
+</div>
+
+<div class="product-box1 visibili" id="pbox3" >
+	<div class="img">
+	<img class="element" src="https://auto.ndtvimg.com/bike-images/colors/hero/maestro-edge/hero-maestro-edge-techno-blue.png?v=24"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Maestro</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 50.00<small>/hour</small></p>
+
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">09:00 AM</span> - 
+		<span title="Closing time" class="time">09:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 50.00/hour</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 4000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+
+<div class="product-box1 visibili" id="pbox4" >
+	<div class="img">
+	<img class="element" src="https://media.zigcdn.com/media/model/2017/Mar/honda-activa-right_600x300.jpg"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Activa 4G </a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 42.00<small>/hour</small></p>
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">07:00 AM</span> - 
+		<span title="Closing time" class="time">10:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 42.00/hour</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 1000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+<div class="product-box1 visibili" id="pbox5" style="margin-left: 110px">
+	<div class="img">
+	<img height="173px" width="106px" src="https://auto.ndtvimg.com/bike-images/big/bajaj/avenger-street-220/bajaj-avenger-street-220.jpg?v=4"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Avenger 220</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. Rs. 750.00<small>/day</small></p>
+
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">10:00 AM</span> - 
+		<span title="Closing time" class="time">08:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 750/Day</option>
+					
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 1000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+<div class="product-box1 visibili" id="pbox6">
+	<div class="img">
+	<img height="173px" width="106px" src="https://auto.ndtvimg.com/bike-images/big/royal-enfield/bullet-electra/royal-enfield-bullet-electra.jpg?v=5"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Electra 350</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 950.00<small>/Day</small></p>
+
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">10:00 AM</span> - 
+		<span title="Closing time" class="time">08:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+				<option>950.00/Day</option>
+									</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 7000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+
+<div class="product-box1 visibili" id="pbox7" style="margin-left: 100px">
+	<div class="img">
+	<img height="173px" width="106px" src="https://auto.ndtvimg.com/bike-images/colors/royal-enfield/himalayan/royal-enfield-himalayan-snow.jpg?v=20"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Himalayan</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 1250.00<small>/Day</small></p>
+
+	<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">10:00 AM</span> - 
+		<span title="Closing time" class="time">08:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 1250/Day</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 1000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+
+<div class="product-box1 visibili" id="pbox8" style="margin-left: 110px">
+	<div class="img">
+	<img  src="https://auto.ndtvimg.com/bike-images/colors/royal-enfield/classic-350/royal-enfield-classic-350-lagoon.png?v=30"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Classic 350</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 825.00<small>/Day</small></p>
+
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">10:00 AM</span> - 
+		<span title="Closing time" class="time">08:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 825.00/Day</option>
+					
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 1000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="Classic 350.html"  rel="">Book</a></div>
+</div>
+
+<div class="product-box1 visibili" id="pbox9" style="margin-left: 110px">
+	<div class="img">
+	<img height="173px" width="106px" src="https://auto.ndtvimg.com/bike-images/colors/royal-enfield/thunderbird-350x/royal-enfield-thunderbird-350x-roving-red.png?v=1"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Thunderbird 850</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 1750.00<small>/week</small></p>
+
+	<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">09:00 AM</span> - 
+		<span title="Closing time" class="time">09:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 1750.00/week</option>
+					
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 10000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+
+<div class="product-box1 visibili" id="pbox10" style="margin-left: 100px">
+	<div class="img">
+	<img  src="https://auto.ndtvimg.com/bike-images/colors/royal-enfield/classic-350/royal-enfield-classic-350-lagoon.png?v=30"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Classic 350</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 6000.00<small>/Week</small></p>
+
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">10:00 AM</span> - 
+		<span title="Closing time" class="time">08:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 6000.00/Week</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 1000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="Classic 350.html"  rel="">Book</a></div>
+</div>
+
+<div class="product-box1 visibili" id="pbox11" >
+	<div class="img">
+	<img class="element" src="https://auto.ndtvimg.com/bike-images/colors/hero/glamour-fi/hero-glamour-fi-techno-blue.png?v=15"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Glamour</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 1950.00<small>/week</small></p>
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">07:00 AM</span> - 
+		<span title="Closing time" class="time">10:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 1950.00/week</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 2000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+
+<div class="product-box1 visibili" id="pbox15" >
+	<div class="img">
+	<img class="element" src="https://auto.ndtvimg.com/bike-images/colors/bajaj/pulsar-220/bajaj-pulsar-220-chrome-black.png?v=1"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Pulsar 220</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 2499.00<small>/week</small></p>
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">09:00 AM</span> - 
+		<span title="Closing time" class="time">09:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 2499.00/week</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 2000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+<div class="product-box1 visibili" id="pbox12" style="margin-left: 110px">
+	<div class="img">
+	<img height="173px" width="106px" src="https://auto.ndtvimg.com/bike-images/colors/royal-enfield/thunderbird-350x/royal-enfield-thunderbird-350x-roving-red.png?v=1"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Thunderbird 850</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 22050.00<small>/month</small></p>
+
+	<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">09:00 AM</span> - 
+		<span title="Closing time" class="time">09:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 22050.00/month</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 10000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+<div class="product-box1 visibili" id="pbox13" style="margin-left: 100px">
+	<div class="img">
+	<img  src="https://auto.ndtvimg.com/bike-images/colors/royal-enfield/classic-350/royal-enfield-classic-350-lagoon.png?v=30"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Classic 350</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 21000.00<small>/month</small></p>
+
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">10:00 AM</span> - 
+		<span title="Closing time" class="time">08:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 21000.00/month</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 5000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="Classic 350.html"  rel="">Book</a></div>
+</div>
+
+<div class="product-box1 visibili" id="pbox14" >
+	<div class="img">
+	<img class="element" src="https://auto.ndtvimg.com/bike-images/colors/hero/glamour-fi/hero-glamour-fi-techno-blue.png?v=15"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Maestro</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 10000.00<small>/month</small></p>
+
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">09:00 AM</span> - 
+		<span title="Closing time" class="time">09:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 10000.00/month</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 4000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+<div class="product-box1 visibili" id="pbox16" >
+	<div class="img">
+	<img class="element" src="https://auto.ndtvimg.com/bike-images/big/bajaj/avenger-street-220/bajaj-avenger-street-220.jpg?v=4"  >
+	</div>
+	<div class="title-box">
+		<h3>
+			<a href="" target="_blank">Street 220</a>
+		</h3>
+	</div>
+	<p class="cost time">Rs. 3999.00<small>/month</small></p>
+<br>
+	<p class="dpgintmgs blist-tmgs">Dealer Timings: <span title="Opening time" class="time">09:00 AM</span> - 
+		<span title="Closing time" class="time">09:00 PM</span>
+	</p>
+	<table class="table">
+		<tbody>
+			<tr> <td>Cost: </td>
+				<td>
+					<select id="bikeLocateAtList" class="select_mate" style="padding-left: -200px;">
+					<option value="">Rs. 3999.00/month</option>
+					</select>
+				</td>
+			</tr>
+			<tr>	
+				<td>
+					<p>Deposit - Rs. 2000</p>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	<div class="button_cont" align="center">
+		<a class="example_e" href="" target="_blank" rel="">Book</a></div>
+</div>
+
+
+<div>
+
+	<div class="footerr">
+		<h1>Rent bike</h1>
+	<p>Now its easy to get two wheeler for rent in Delhi or bike hire in Delhi. We do provide monthly bike rental in Delhi city. One of the best, bike rentals in Delhi. We provide cheap bike rental Delhi. Scooter rental Delhi is our top priority to provide bike on rent near me (you). Find us with bike rental near me on search engines. You can hire good condition motorcycle for rent in Delhi. We are extremly proud to have a customer like you to rent bike in Delhi. User friendly website to rent bike in Delhi. High quality assurance with rent a motorbike in Delhi. We are everywhere, now rent a bike anywhere in india. We have flexible timings. You can rent a bike on an hourly, daily, weekly and monthly basis.</p>
+	</div>
+
+	<footer style="font-size: 1.15em; margin-top: -20px;">
+  <center>
+  <div class="f1"> <form></form>
+    <button href="#top" style="margin-bottom: 30px;" onclick=" document.documentElement.scrollTop = 0;"> Back To Top </button>
+    <ol class="f1ol">
+      <li style="margin-left: 20px;"><a href="Homepage.html">Homepage</a></li>
+      <li style="margin-left: 30px;"><a href="mainpage.html">Main</a></li>
+      <li style="margin-left: 30px;"><a href="about.html">About</a></li>
+      <li style="margin-left: 30px;"><a href="">Booking</a></li>
+      <li style="margin-left: 30px;"><a href="NewLogin.html">Login</a></li>
+      <li style="margin-left: 30px;"><a href="Sign-up.html">Sign-up</a></li>
+      <li style="margin-left: 30px;"><a href="ContactUs.html">Contact</a></li>
+      <li style="margin-left: 30px;"><a href="FAQ.html">FAQs</a></li>
+      <li style="margin-left: 30px;"><a href="Feedback.html">Feedback</a></li>
+    </ol>
+  <div class="f2">
+      <img src="https://image.flaticon.com/icons/svg/220/220200.svg">
+      <img src="https://image.flaticon.com/icons/svg/124/124021.svg">
+      <img src="https://image.flaticon.com/icons/svg/174/174855.svg">
+      <img src="https://image.flaticon.com/icons/svg/281/281769.svg">
+  </div>
+  </div>
+</center>
+</footer>
+
+</body>
+</html>

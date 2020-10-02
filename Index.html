@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Homepage</title>
+<link rel="stylesheet" type="text/css" href="Homepage-css.css">
+<link rel="stylesheet" type="text/css" href="footer.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow|Roboto" rel="stylesheet">
+</head>
+
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<script  src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(window).on('scroll',function(){
+  if($(window).scrollTop()){
+    $('nav').addClass('black');
+  }
+  else{
+    $('nav').removeClass('black')
+  }
+
+  } )   
+  </script>
+<body style="font-family: 'PT Sans Narrow', sans-serif!important;">
+  <nav>
+
+         <ul class="u1"  >
+          <li><a href="#"><img style="height: 70px;width:200px;margin-left: -100px;margin-top: 0px;  " src="http://www.extremebiketrip.com/images/logo.png"></a></li>       </ul>
+        <ul class="navu">
+          <li class="li"><a  href="Homepage.html" style="color: white;">Home</a></li>
+          <li class="li"><a href="about.html"style="color: white;">About</a></li>
+          <li class="li"><a href="booking.html"style="color: white;">Booking</a></li>
+          
+          <li class="li"><a href="FAQ.html"style="color: white;">FAQs</a></li>
+          <li class="li"><a href="ContactUs.html"style="color: white;">Contact</a></li>
+
+          <li ><a class="new" href="NewLogin.html" style="margin-left: 40px ;">login</a></li>
+          <li ><a class="new" href="Sign-up.html" style="margin-left: 20px; margin-right: -60px">Signup</a></li>
+        </ul>
+ 
+ </nav>
+
+		<p >Ready to Ride?</p>  
+ 		<button id="marginbtn1" onclick="window.location.href='mainpage.html' ">Main page</button>
+ 		<button id="marginbtn2" onclick="window.location.href='Booking.html' ">book</button>
+
+   
+ 		
+ 
+</body>
+</html>

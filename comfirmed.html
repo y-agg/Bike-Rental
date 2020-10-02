@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+	window.onload = (event) => {
+ removediv();
+};
+	function removediv() {
+	var flag=prompt("Enter value");
+	if(flag==0){
+		var tag=document.getElementById('right');		
+		tag.parentNode.removeChild(tag);
+		
+		}
+	if(flag==1){
+		var tag=document.getElementById('wrong');
+		tag.parentNode.removeChild(tag);
+		}	
+	}
+</script>
+	<title>Booking Comfirmed</title>
+	<link href="https://fonts.googleapis.com/css?family=ZCOOL+XiaoWei" rel="stylesheet">
+<style type="text/css">
+	*{	font-family: 'ZCOOL XiaoWei', serif;
+		margin-left: 0;
+		padding-left: 0;
+	}
+
+	.container{	
+	opacity:1;
+	margin-left: 35%;
+	margin-top: 6%;
+	width: 280px;
+	height: auto;
+	border: 4px solid rgba(46, 204, 113, 1);
+	padding-top: 20px;
+	padding-left: 80px;
+	padding-bottom: 20px;
+	padding-right : 80px;
+	}
+	button{
+		background:rgb(255,255,255);
+		width: 200px;
+		height: 30px;
+		padding-top: 1%;
+		padding-bottom: 3%;
+		margin-left: 10%;
+		font-size: 1.2em;
+	border: 2px solid rgba(46, 204, 113, 1);
+	color: rgba(46, 204, 113, 1);
+	}
+	button:hover{
+		color: rgba(38, 194, 129, 1);
+		border: 2px solid rgba(38, 194, 129, 1);
+	}
+	.logo img{
+		margin-left: -20px;
+		width: 300px;
+		height: 200px;
+	}
+
+
+
+	/**/
+
+	.containerx{	
+	opacity:1;
+	margin-left: 35%;
+	margin-top: 6%;
+	width: 280px;
+	height: auto;
+	border: 4px solid rgba(242, 38, 19, 1);
+	padding-top: 20px;
+	padding-left: 80px;
+	color: rgba(242, 38, 19, 1);
+	padding-bottom: 20px;
+	padding-right : 80px;
+	}
+	.textx h1{
+		left-margin:150px;
+	}
+	.textx table tr	td	button{
+		background:rgb(255,255,255);
+		width: 150px;
+		height: 30px;
+		padding-top: 1%;
+		padding-bottom: 3%;
+		margin-left: -10%;
+		font-size: 1.2em;
+	border: 2px solid rgba(242, 38, 19, 1);
+	color: rgba(242, 38, 19, 1);
+
+	}
+	.textx table tr	td	button:hover{
+	border: 2px solid rgba(231, 76, 60, 1);	
+	color:rgba(231, 76, 60, 1);
+	}
+	.logox img{
+		margin-left: -20px;
+		width: 300px;
+		height: 200px;
+	}
+</style>
+</head>
+
+	<body>
+		<div class="container" id="right">
+			<div class="logo">
+				<img src="https://assets.bigcartel.com/product_images/229895771/2A3FB84C-A42A-4166-BF59-6B053464D334.png?auto=format&fit=max&h=1200&w=1200">
+			</div>
+			<div class="text">
+				<h1>Booking Comfirmed</h1>
+				<table>	
+					<tr>
+					<td>Starting Date:</td>
+					<td>Date</td>
+					</tr>
+					<td>Starting Time:</td>
+					<td>Time</td>
+					</tr>
+					<tr>
+					<td>Ending Date:</td>
+					<td>Date</td>
+					</tr>
+					<td>Ending Time:</td>
+					<td>Time</td>
+					</tr>
+					<tr>
+					<td>Amount of booking: </td>
+					<td>Amount in Rupees </td>
+					</tr>
+					<tr>
+					<td>Tax : </td>
+					<td>Tax Amount </td>
+					</tr>
+					<tr>
+					<td>Final Amount: </td>
+					<td>Final Amount</td>
+					</tr>
+					<tr>			
+					<td colspan="2"><button onclick="window.print();"> Print </button> </td>
+					</tr>			
+				</table>			
+			</div>
+		</div>
+
+
+		<div class="containerx" id="wrong">
+			<div class="logox">
+				<img src="http://www.myiconfinder.com/uploads/iconsets/256-256-fb707410a020d77346fcd2dc2f6cc93e-cross.png">
+			</div>
+			<div class="textx">
+				<h1>Booking Failed</h1>
+				<table>	
+					<tr>
+					<td>Starting Date:</td>
+					<td>Date</td>
+					</tr>
+					<td>Starting Time:</td>
+					<td>Time</td>
+					</tr>
+					<tr>
+					<td>Ending Date:</td>
+					<td>Date</td>
+					</tr>
+					<td>Ending Time:</td>
+					<td>Time</td>
+					</tr>
+					<tr>
+					<td>Amount of booking: </td>
+					<td>Amount in Rupees </td>
+					</tr>
+					<tr>
+					<td>Tax : </td>
+					<td>Tax Amount </td>
+					</tr>
+					<tr>
+					<td>Final Amount: </td>
+					<td>Final Amount</td>
+					</tr>
+					<tr>			
+					<td> <button> <a href="Booking.html" style="text-decoration: none; color: inherit;">Retry</a> </button> </td>
+					<td> <button onclick="window.print();"> Print </button> </td>
+					</tr>		
+				</table>			
+			</div>
+		</div>
+	</body>
+</html>

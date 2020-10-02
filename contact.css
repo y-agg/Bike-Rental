@@ -1,0 +1,183 @@
+*{
+	margin: 0;
+	padding-left: 0;
+}
+img{
+	width: 100%;
+	height: 300px;
+	
+
+}
+.row{
+
+ float: left;
+ width:  20%;
+
+ height: 100px;
+ padding: 2%;
+
+ text-transform: none;
+ text-decoration: none;
+
+   
+ }
+ .icon{
+  height: 100px; transition: 0.4s;
+  width: 100px;
+
+
+ }
+
+ .icon:hover{
+ 	opacity: .7;
+ 	background-color: transparent;
+    color: white;
+    
+     transform: scale(0.8);
+     
+    
+ }
+ .form{
+ 	padding: 5%;
+ 	width: 45%;
+ 	float: left;
+ }
+ a{
+ 	text-transform: none;
+ }
+ .button {
+  border: 2px solid #555555;
+  
+   color: black;
+  padding:7px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 25px 10px;
+  cursor: pointer;
+  border-radius:6px;
+   background-color: rgba(0,0,0,0.3);
+   transition: .5s;
+}
+
+
+.button:active {
+  background-color: #555555;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.button:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  background-color: #555555;
+  color: white;
+
+}
+
+.row2{
+ float: left;
+width: 50%;
+padding: 5%;
+margin-left:
+
+
+}
+a{
+
+text-decoration:none;
+color: black;
+
+}
+
+.loc:hover{
+opacity: .7;
+ 	background-color: transparent;
+    color: white;
+    
+     transform: scale(0.8);
+     transition: .5s;
+
+}
+
+.form1{
+	background-color: rgb(0,0,0,0.3);/* color yet to be decided*/
+	border-radius: 70px;
+	margin-left: 400px;
+}
+.form1:hover{
+
+background: url(formw.jpeg);
+background-repeat: no-repeat;
+background-size: cover;
+transition: .7s;
+background-position: center;
+
+}
+.loc{
+ margin-top: 300px;
+ margin-left:  600px;
+ height:100px;
+ width: 100px;
+
+}
+.cont{
+	display: inline-block;
+}
+
+
+.gap{
+
+	margin-left: 200px;
+}
+
+input[type=text] {
+  width: 200px;
+  border-radius: 6px;
+
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  
+ 
+}
+input[type=text]:focus {
+  width: 350px;
+   transition: width .7s ease-in-out;
+   }
+
+input[type=mail] {
+  width: 200px;
+  border-radius: 6px;
+
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  
+ 
+}
+ input[type=mail]:focus {
+  width: 350px;
+   transition: width .7s ease-in-out;
+   
+}
+
+textarea{
+
+border-radius: 6px;
+
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+  margin-bottom: 10px;
+
+}
+
+
+.button2{
+
+height: 41px;
+border-radius: 7px;
+
+
+
+}
+
+

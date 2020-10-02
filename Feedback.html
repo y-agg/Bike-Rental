@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Feedback Form</title>
+  <link rel="stylesheet" type="text/css" href="navbar.css">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow|Roboto" rel="stylesheet">
+
+
+ <style>
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  margin: 0 auto;
+  margin-top: 2.5%;
+  padding: 4rem;
+  width: 48rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+  color: #373d51;
+  padding: 1.3rem;
+  margin: 0;
+}
+
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer; 
+  color: #03b5d2;
+}
+.accordion a:hover::after {
+  border: 1px solid #03b5d2;
+}
+.accordion a.active {
+  color: #03b5d2;
+  border-bottom: 1px solid #03b5d2;
+}
+.accordion a::after {
+  font-family: 'Ionicons';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  color: #03b5d2;
+  border: 1px solid #03b5d2;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  transition: all 0.35s ease 0.15s;
+}
+
+.modal {
+  display: none;
+  position: fixed; 
+  z-index: 1; 
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%; 
+  height: 100%; 
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  margin-top: 10%;
+}
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+.button {
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+margin-left: 80px;
+margin-top: 10px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+input[type="radio"]{
+	margin-left: 60px;
+}
+
+</style>
+<link rel="stylesheet" type="text/css" href="navbar.css">
+<script  src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(window).on('scroll',function(){
+  if($(window).scrollTop()){
+    $('nav').addClass('black');
+  }
+  else{
+    $('nav').removeClass('black')
+  }
+
+  } )   
+  </script>
+</head>
+<body style="font-family: 'PT Sans Narrow', sans-serif!important;">
+<nav>
+
+         <ul class="u1"  >
+          <li><a href="#"><img style="height: 70px;width:200px;margin-left: -100px;margin-top: 0px;  " src="http://www.extremebiketrip.com/images/logo.png"></a></li>       </ul>
+        <ul class="navu">
+          <li class="li"><a  href="Homepage.html" style="color: white;">Home</a></li>
+          <li class="li"><a href="about.html"style="color: white;">About</a></li>
+          <li class="li"><a href="booking.html"style="color: white;">Booking</a></li>
+          
+          <li class="li"><a href="FAQ.html"style="color: white;">FAQs</a></li>
+          <li class="li"><a href="ContactUs.html"style="color: white;">Contact</a></li>
+
+          <li ><a class="new" href="NewLogin.html" style="margin-left: 40px ;">login</a></li>
+          <li ><a class="new" href="Sign-up.html" style="margin-left: 20px; margin-right: -60px">Signup</a></li>
+        </ul>
+ 
+ </nav>
+ 
+
+  <div class="container">
+
+  <h2>Feedback Form</h2>  
+  <div class="accordion">
+    <div class="accordion-item">
+      <a>Did we meet your expectations?</a>
+      <div class="content">
+        <form id="form1">
+        	<input type="radio" name="option1"> Yes
+        	<input type="radio" name="option1"> No
+        	<!-- <input type="radio" name="option1"> 3
+        	<input type="radio" name="option1"> 4
+        	<input type="radio" name="option1"> 5 -->
+        </form>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Was it easy to find what you were looking for?</a>
+      <div class="content">
+       <form id="form2">
+        	<input type="radio" name="option1"> Yes
+        	<input type="radio" name="option1"> No
+        	<!-- <input type="radio" name="option1"> 3
+        	<input type="radio" name="option1"> 4
+        	<input type="radio" name="option1">  -->
+        </form>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Were we able to satisfy your need?</a>
+      <div class="content">
+       <form id="form3">
+        	<input type="radio" name="option1"> Yes
+        	<input type="radio" name="option1"> No
+        	<!-- <input type="radio" name="option1"> 3
+        	<input type="radio" name="option1"> 4
+        	<input type="radio" name="option1"> 5 -->
+        </form>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Rate our service </a>
+      <div class="content">
+       <form id="form4">
+        	<input type="radio" name="option1"> 1
+        	<input type="radio" name="option1"> 2
+        	<input type="radio" name="option1"> 3
+        	<input type="radio" name="option1"> 4
+        	<input type="radio" name="option1"> 5
+        </form>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <a>Rate Your Experience</a>
+      <div class="content">
+       <form id="form5">
+        	<input type="radio" name="option1"> 1
+        	<input type="radio" name="option1"> 2
+        	<input type="radio" name="option1"> 3
+        	<input type="radio" name="option1"> 4
+        	<input type="radio" name="option1"> 5
+        </form>
+      </div>
+    </div>
+    <button class="button" id="myBtn" onclick="final();">Submit</button>
+
+    <div id="myModal" class="modal">
+  		<div class="modal-content">
+    		<span class="close">&times;</span>
+    		<p>Thank You For Your Valuable feedback</p>
+  		</div>
+	</div>
+
+  
+  </div>  
+</div>
+<script>
+	function final() {
+		document.from.form1.submit();
+		document.from.form2.submit();
+		document.from.form3.submit();
+		document.from.form4.submit();
+		document.from.form5.submit();
+	}
+</script>
+<script>
+var modal = document.getElementById('myModal');
+var btn = document.getElementById("myBtn");
+var span = document.getElementsByClassName("close")[0];
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+span.onclick = function() {
+  modal.style.display = "none";
+}
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+ <script >
+      const items = document.querySelectorAll(".accordion a");
+function toggleAccordion(){
+  this.classList.toggle('active');
+  this.nextElementSibling.classList.toggle('active');
+}
+items.forEach(item => item.addEventListener('click', toggleAccordion));
+    </script>
+</body>
+
+</html>
+ 

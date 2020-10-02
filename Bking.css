@@ -1,0 +1,307 @@
+	 *{
+     	box-sizing: border-box;
+      	margin:0;
+      	padding: 0; 
+      }
+      .line{
+        margin-top: 10px;
+      }
+    .visibili{
+        visibility: hidden;
+       
+      }
+      .linex{
+   display: none;
+      }
+      
+      body{   
+      	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), ;
+        height: 100%;
+        font-family:'Open Sans',sans-serif
+        }
+      div{
+      	display: block;
+      }
+      p {
+          margin-top: 0;
+          margin-bottom: 1rem;
+      }
+    
+      .right-text h2{
+      	padding-top: 10px;
+      	color: white;
+      }
+      .logo {
+          float: left;
+      }
+      .logo a img{
+ height: 100px;
+          }
+      .right-text {
+          float: right;
+          padding: 10px 20px;
+      }
+      .bar-back {
+          font-size: 13px;
+          text-align: center;
+          color: #ccc;
+          word-spacing: 2px;
+      }
+      .bar-back a {
+      	color: white;
+      }
+      div.nw-filtersty001 
+      {
+          font-family: 'Montserrat', sans-serif;
+          background: rgba(0,0,0,0);
+          border: #bbb solid 1px;
+          color: white;
+          padding: 15px 15px 5px;
+          border-radius: 3px;
+          background-image: url(Bground.jpeg);
+          background-position: center;
+          background-size: cover;
+          height: 200px;
+          margin-top: -9px;
+      }
+      .product-box1{
+      	background:#fff;
+        background: white ;
+        margin:20px 0;  display: inline-block;
+        border:#e6e6e6 solid 1px;
+        width: auto; 
+        height: auto;
+
+        margin-left: 112px; 
+        font-family: 'Montserrat', sans-serif;
+        box-shadow: 1px 2px 10px -2px rgba(0,0,0,0.3); 
+        border-radius: 3px; }
+      .product-box1:hover {
+      	transform:scale(1.1);
+      	height: 10%;
+      	width: 24%;
+      	 height: auto;
+      	}
+      .product-box1 .img
+      {/*position:relative;*/
+      	overflow:overlay;
+      	width: 300px;
+      	height: auto;
+         
+      } 
+      .product-box1 .img img
+      {max-width:100%;
+      	transition:all .5s;
+      	width:100%;
+      	height:auto;
+        /*position: relative;*/
+        
+      } 
+      .product-box1 .title-box{
+      	padding:10px;
+      	text-align:center
+      } 
+      .product-box1:hover .img img{
+      	transform:scale(1.1); 
+      	height: auto;
+      }
+      .product-box1 .title-box a{
+      	color:#171717;
+      	font-size:16px;
+      } 
+      .product-box1 .cost{
+      	text-align:center;
+      	font-size:26px;
+      	margin:5px 10px 0;
+      } 
+      .time{ 
+       color: orange;
+   		}
+      .example_e {
+      border: none; 
+      background: #404040;
+       color: #ffffff !important;
+        font-weight:
+      100; padding: 10px;
+       text-transform: uppercase; 
+       border-radius: 6px;
+        display:
+      inline-block; 
+      text-decoration: none;
+      margin-top: -10px;
+      }
+
+      .example_e:hover {
+      color: #404040 !important;
+      font-weight: 700 !important;
+      letter-spacing: 3px;
+      background: none;
+      transition: all 0.3s ease 0s;
+      }
+
+      .select_mate {
+        width: 130px;
+        height: auto;
+        font-family: 'Montserrat';
+        box-shadow: 1px 2px 10px -2px rgba(0,0,0,0.3);
+        border-radius: 3px;
+        transition: all 375ms ease-in-out;
+        select {
+        position: absolute;
+        overflow: hidden;
+        height: 0px;
+        opacity: 0;  
+
+        }
+      }
+      #visi2{
+      	visibility: hidden;
+      }
+      #visi1{
+      	visibility: hidden;
+      }
+     .ghost{
+     	display: none
+     }
+.footerr{
+		
+	    
+       
+        left: 0;
+        right: 0;
+        color: #fff;
+        margin: 15px auto;
+	    color: white;
+		height: auto ;
+	
+        font-family: 'Montserrat', sans-serif;
+        background:url(Bground.jpeg);
+        background-size: cover;
+        background-position: center;
+        border: #bbb solid 1px;
+        color: white;
+        padding: 15px 15px 5px;
+        border-radius: 3px;
+
+        
+		}
+.footerr h1{
+        	font-size: 2em;
+        }	
+.footerr p{
+	font-size: 1.1em;
+  text-align: justify;
+}        	
+
+
+.pakkalast
+{   margin-top: 0px;
+    padding-top: 10px;  
+	height: auto ;
+	background: black;
+	width: all;
+	border: #bbb solid 1px;
+	border: none;
+	color :white;
+}
+.smalll
+{	font-size: 1.1em;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(228, 233, 237, 1);
+}
+
+.big{
+	font-size: 2.1em;
+
+}
+.rmargin{
+	padding-left: 100px; 
+	padding-right: 100px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(228, 233, 237, 1);
+}
+.lmargin
+{  
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(228, 233, 237, 1);
+	padding-left: 100px;
+}
+.whats a{
+	text-decoration: none;
+	color: rgba(228, 233, 237, 1);
+}
+.whats:hover a{
+	margin-top: 5px;
+	padding: 8px 5px;
+	border: 2px solid rgba(228, 233, 237, 1);
+}
+.what{
+	padding-top: 9px;
+	padding-left: 100px;
+	font-family: 'Montserrat', sans-serif;
+	color: rgba(228, 233, 237, 1);
+	font-size: 1.1em;
+	
+}
+.what a{
+	text-decoration: none;
+	color: rgba(228, 233, 237, 1);
+}
+.what:hover a{
+	padding: 3px 5px;
+	border: 2px solid rgba(228, 233, 237, 1);
+}
+
+.cpy{
+	background: white;
+}
+
+.cpy span {
+padding-left: 200px;
+font-family: 'Montserrat', sans-serif;
+}
+input[type=submit]{
+width: 100px;
+color: white;
+background: rgba(0,0,0,0);
+height: inherit;
+/*margin-left: 10px;*/
+font-family: inherit;}
+
+.txtsrhDt{
+  font-size: 0.99em;
+}
+#loop{
+   background: inherit; color: inherit; border: inherit; font-size: 1.1em; margin-left: 10px; text-decoration: underline;
+      }
+
+.hey{
+  margin-top: 30px;
+}
+
+/*#d00,#d11,#d22,#d33,#d44{
+
+ padding: 4px;
+
+}*/
+
+/*#d11,#d33{
+padding-left:30px; 
+padding-right: -10px;
+}
+
+#d22,#d44 {
+  padding-left: 20px;
+}*/
+#subtn{
+
+  margin-left: 30px ;
+  
+  padding: 4px;
+}
+
+  #subtn:active{
+
+background-color: #E2472F;
+
+  }

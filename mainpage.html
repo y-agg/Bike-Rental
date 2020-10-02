@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Main Page</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans|PT+Sans+Narrow|Roboto" rel="stylesheet">
+	
+	<link rel="stylesheet" type="text/css" href="how.css">
+    <link rel="stylesheet" type="text/css" href="navbar.css">
+    <link rel="stylesheet" type="text/css" href="mainpage.css">
+    <link rel="stylesheet" type="text/css" href="footer.css">
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link rel="stylesheet" type="text/css" href="Bking.css">
+    <script  src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" 
+crossorigin="anonymous"></script>
+  <script type="text/javascript">
+  $(window).on('scroll',function(){
+  if($(window).scrollTop()){
+    $('nav').addClass('black');
+  }
+  else{
+    $('nav').removeClass('black')
+  }
+
+  } )   
+  </script>
+
+</head>
+<body style="font-family: 'PT Sans Narrow', sans-serif!important;">
+
+<nav>
+
+         <ul class="u1"  >
+          <li><a href="#"><img style="height: 70px;width:200px;margin-left: -100px;margin-top: 0px;  " src="http://www.extremebiketrip.com/images/logo.png"></a></li>       </ul>
+        <ul class="navu">
+          <li class="li"><a  href="Homepage.html" style="color: white;">Home</a></li>
+          <li class="li"><a href="about.html"style="color: white;">About</a></li>
+          <li class="li"><a href="booking.html"style="color: white;">Booking</a></li>
+          
+          <li class="li"><a href="FAQ.html"style="color: white;">FAQs</a></li>
+          <li class="li"><a href="ContactUs.html"style="color: white;">Contact</a></li>
+
+          <li ><a class="new" href="NewLogin.html" style="margin-left: 40px ;">login</a></li>
+          <li ><a class="new" href="Sign-up.html" style="margin-left: 20px; margin-right: -60px">Signup</a></li>
+        </ul>
+ 
+ </nav>
+
+
+ <div id="top" class="slideshow-container" style="margin-top: 100px;margin-left: -8px; margin-right: 0px;">
+<center>
+
+<div class="mySlides fade">
+  <img style="height: 500px;
+width: 100%;" class="imgblur imge"  src="Bground.jpeg" >
+  <div class="fact">
+    <h1>Book Bike </h1><br><br>
+    <h3>Ride Unlimited With No Worries</h3>
+    <p>
+          <form action="Booking.html" method="get" style="font-size: 1em ; /*border: 1px solid lightgrey*/; margin-right:400px ; margin-left: 400px;padding-top:30px;
+          padding-bottom: 30px; padding-right: 50px; padding-left: 25px; ">
+  Time 
+ <SELECT name="time" id="d00">
+  <option value="Hourly">Hourly</option>
+  <option value="Daily">Daily</option>
+  <option value="Weekely">Weekely</option>
+  <option value="Monthly">Monthly</option>
+ </SELECT><br>        
+  Starting date <input type="Date" name="SDate" id="d11" ><br>
+  Starting time <input type="time" name="STime" id="d22"><br>
+  Ending date <input type="Date" name="EDate" id="d33"><br>
+  Ending time <input type="time" name="ETime" id="d44"><br>
+  <input type="submit" value="Find Bike" style="padding: 10px;border: #E2472F 3px ridge;">
+</form> 
+    
+    </p>
+  </div>  
+</div>
+</center>
+
+
+
+<div class="mySlides fade" >
+  <img style="height: 500px;
+width: 100%;" src="Bground.jpeg" >  
+  <center><div class="nut">
+   <h1><img class="mainimgs" src="http://www.extremebiketrip.com/images/logo.png" b></h1>
+      <ul style="list-style: none;margin-top: -30px">
+        <li style="color: white;font-size: 2.5em; font-weight: bold;">WELCOME, BIKE BOOKING IS NOW SO EASY</li>
+      
+      </ul>
+      </div>
+    </center>
+</div>
+<!-- videoplayback.mp4 -->
+<div class="mySlides fade">
+  <img style="height: 500px;
+width: 100%;" class="imgblur imge" src="Bground.jpeg" >
+  <center><div class="nut">
+   <h1>
+    <video autoplay muted loop style="margin-left: -100px; height: 430px;">
+  <source src="videoplayback.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+
+</h1>
+      </div>
+    </center>
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+ <div class="grid">
+ <div>
+ 	<center>
+ 	<div class="grid11"><img style="height: 120px;" src="	https://image.flaticon.com/icons/svg/131/131636.svg"><br><h3>No Riding Limits</h3><br><p style="font-size: 0.9em;">Odometer Won't Scare You Anymore.</p></div>
+
+ 	<div class="grid11"> <img style="height: 120px; "src="https://image.flaticon.com/icons/svg/766/766949.svg"><br><h3>Freebies</h3><br><p style="font-size: 0.9em;">Helmets Always, Sometimes More.</p></div>
+
+ 	<div class="grid11" ><img style="height: 120px;" src="	https://image.flaticon.com/icons/svg/138/138291.svg"><br><h3>Secure Payments</h3><br><p style="font-size: 0.9em;">Our Payment Partners are Industry Leaders.</p></div></center>
+ 	
+ </div>
+ <div><center>
+     <div class="grid11"><img style="height: 120px;" src="	https://image.flaticon.com/icons/svg/899/899098.svg"><br><h3>No Bullshit</h3><br><p style="font-size: 0.9em;">A Day Rent is simply for 24 hrs, We mean it.</p></div>
+
+ 	<div class="grid11"><img style="height: 120px; "src="https://image.flaticon.com/icons/svg/265/265674.svg"><br><h3>Verified Dealers</h3><br><p style="font-size: 0.9em;">Committed to Quality Service.</p></div>
+
+ 	<div class="grid11"><img style="height: 120px;" src="https://image.flaticon.com/icons/svg/631/631200.svg"><br><h3>100% Moneyback</h3><br><p style="font-size: 0.9em;">Not Happy With Service, Take Your Money Back.</p></div>	
+
+     </center>
+
+ </div>
+     
+    
+ 
+</div>
+ <br><br>
+<center><hr width="80%"></center><br><br><br>
+<div>
+	
+	<center><h1>Customer Experiences</h1></center><br><br>
+<div class="product-box1" id="cexp1" style="margin-left: 40px; " ><!-- cexp is in footer css -->
+	<div class="img">
+		<center><img class="element" src="https://image.flaticon.com/icons/svg/145/145843.svg" style="height: 100px; margin-left:25px; width: 100px; margin-top: 17px;" ></center>
+	
+	</div>
+	<div class="title-box">
+		<h3>
+			Gonna be My First Choice Forever
+		</h3>
+	</div>
+	<center><p class="cost time" style="width: 259px;  ;font-size: 1em ;color:grey;height: 350px;">It has been an awesome experience for me when I got to roam places like Dipor Bil, Kamakhya Temple, Umanadna temple and many more places on my way to Dispur. Before I started the journey I wasn't sure I would get chance to visit and these all beautiful places....yeah they truly are..... Coz i wasn't acquainted there and I wasn't having the confidence to even think of visiting these many places. It was so affordable and friendly that no one can even imagine unless gives a shot to Extreme bike Trip. Once again I recommend to all my dear bike lovers to go for Extreme Bike Trip.</p></center>
+	
+
+</div>
+
+<div class="product-box1" id="cexp2" style="padding: 10px">
+	<div class="img">
+		<center><img class="element" src="https://image.flaticon.com/icons/svg/145/145847.svg" style="height: 100px; margin-left:25px; width: 100px; margin-top: 17px;" ></center>
+	
+	</div>
+	<div class="title-box">
+		<h3>
+			Leading motorbike rental service!
+		</h3>
+	</div> 
+	<center><p class="cost time" style="width: 259px;  ;font-size: 1em ;height: 340px; color: grey ">Road trips would not have been exciting if there were no Exteme bike trip bike rental company. One of the leading motorbike rental service providers in India, Extreme bike trip offers a diversified range of two-wheelers for short and long rides on an hourly and daily basis. You can rent bikes for road trips from Delhi to Manali, Bangalore to Goa, Mumbai to Pune, Mumbai to Goa, Delhi to Udaipur, Delhi to Rishikesh, Udaipur to Jaisalmer and likes.</p></center>
+	
+
+</div>
+<div class="product-box1" id="cexp3" style="padding: 10px">
+	<div class="img">
+		<center><img class="element" src="https://image.flaticon.com/icons/svg/145/145848.svg" style="height: 100px; margin-left:25px; width: 100px; margin-top: 17px;" ></center>
+	
+	</div>
+	<div class="title-box">
+		<h3>
+			Trip to ASSAM and MEGHALAYA!
+		</h3>
+	</div>
+	<center><p class="cost time" style="width: 259px;  ;font-size: 1em ;color:grey;height: 350px;">We had booked two bikes (Pulsar 220 & classic 350) for my ASSAM and MEGHALAYA trip from Exteme bike trip . The bikes were very well maintained and perfectly clean when they handed the key. So no trouble with the bike at any place ..Which made the whole trip tension free. Even the bike renting was so easy within 30 min all formalities were over All the staffs of Exteme bike trip were very cooperative. I'd be happy to rent from them again & I would recommend anybody who wants to feel the roads of ASSAM and MEGHALAYA by self-driving go for Exteme bike trip.</p></center>
+	
+
+</div>
+
+</div><br><br><br>
+<center><hr width="80%"></center>
+<br><br><br>
+<div class="how">
+	<center>
+	<div class="f1">
+		<h1> How it works </h1>
+		<hr id="hrline">
+<table style="max-width:60%; text-align: center;margin-top: 20px; ">
+	<tr>
+		<td><img src="https://www.wheelstreet.com/images/search.svg"></td>
+		<td><img src="https://www.wheelstreet.com/images/rightArrow.svg"></td>
+		<td><img src="https://www.wheelstreet.com/images/select.svg"></td>
+		<td><img src="https://www.wheelstreet.com/images/rightArrow.svg"></td>
+		<td><img src="https://www.wheelstreet.com/images/pickup.svg"></td>
+		<td><img src="https://www.wheelstreet.com/images/rightArrow.svg"></td>
+		<td><img style="padding-left: 15px; " src="https://www.wheelstreet.com/images/ride.svg"></td>
+	</tr>
+	<tr>
+		<td>Search</td>
+		<td></td>
+		<td>Select</td>
+		<td></td>
+		<td>Pick-up</td>
+		<td></td>
+		<td>Ride</td>
+	</tr>
+	<tr>
+		<td style="color: grey;">Set the date of your ride and then search for the bike that you want.</td>
+		<td></td>
+		<td style="color: grey;">Choose out of various bikes that best suits the trip you’re about to take.</td>
+		<td></td>
+		<td style="color:grey;">Get suited up and head to the pick-up location to get your ride.</td>
+		<td></td>
+		<td style="color: grey;">Get ready to roll and have a nice time tripping!</td>
+	</tr>
+</table>
+	</div>
+</center>
+</div>
+<br><br><br>
+<center><hr width="80%"></center>
+<br><br><br>
+
+<div class="nexthow">
+	<center><h2>Satisfied With Our Service ? </h2><br>
+	<h4>Give Us Your Valuable Feedback ;-) </h3>
+		</center><form method="get" action="Feedback.html"><button  id="fdbtn"style=" cursor: pointer;" type="submit" >FEEDBACK</button></form>
+		
+</div><br><br><br>
+<center><hr width="80%"></center>
+<br><br><br>
+<table>
+	
+	<tr>
+		<td style="padding-left: 200px;"> <img src="https://www.wheelstreet.com/images/androidScreen.png"></td>
+		<td style="padding-left:100px;">  <p style="font-size: 2em;">Extreme bike trip is on Android & IOS</p><br>
+              <p>Good things should never be far from a click</p><br>
+              <p>We'll send you a link, open it on your phone to download the app</p><br>
+
+              <form>
+              	
+              	<input type="text" name="" pattern= "" value="+91" style="padding:17px;width: 400px;border-radius: 0px">
+
+              	<button style="background-color:#E2472F; padding: 10px; border-top-right-radius: 4px;
+             	border-bottom-right-radius: 4px; margin-left: -100px; border-color: transparent;">Send App Link</button>
+              </form>
+              <br><hr style="width: 200px; display: inline-block;"><h3 style="display: inline-block; margin-top: 20px; color: grey;">OR</h3> <hr style="display: inline-block;width: 200px">
+            
+             <table>
+             	
+             	<tr>
+             		<td><a href="#"><img src="https://www.wheelstreet.com/images/playStore.png" style="height: 40px;margin-right: 30px; margin-left: 60px; margin-top: 20px;"</a></td>
+             		<td> <a href="#"><img src="https://www.wheelstreet.com/images/appStore.png" style="height: 40px; margin-top: 20px"></a></td>
+             	</tr>
+             </table>    
+		</td>
+
+	</tr>
+</table>
+<br><br>
+
+<footer>
+	<center>
+	<div class="f1"> <form></form>
+		<button href="#top" onclick=" document.documentElement.scrollTop = 0;"> Back To Top </button>
+		<ol class="f1ol">
+			<li><a href="Homepage.html">Homepage</a></li>
+			<li><a href="mainpage.html">Main</a></li>
+			<li><a href="about.html">About</a></li>
+			<li><a href="Booking.html">Booking</a></li>
+			<li><a href="NewLogin.html">Login</a></li>
+			<li><a href="Sign-up.html">Sign-up</a></li>
+			<li><a href="ContactUs.html">Contact</a></li>
+			<li><a href="FAQ.html">FAQs</a></li>
+			<li><a href="Feedback.html">Feedback</a></li>
+		</ol>
+	<div class="f2">
+			<img src="https://image.flaticon.com/icons/svg/220/220200.svg">
+			<img src="https://image.flaticon.com/icons/svg/124/124021.svg">
+			<img src="https://image.flaticon.com/icons/svg/174/174855.svg">
+			<img src="https://image.flaticon.com/icons/svg/281/281769.svg">
+	</div>
+	</div>
+</center>
+</footer>
+
+</body>
+<script>
+var slideIndex = 2;
+
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  if (n > slides.length) {
+    slideIndex = slides.length
+  }    
+  if (n < 1) {
+    slideIndex = 1
+  }
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  slides[slideIndex-1].style.display = "block"
+}
+</script>
+</html>

@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis');
+  body{
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(bg-01.jpg);
+    height: 100%;
+    background-size: cover; 
+    font-family: 'PT Sans Narrow', sans-serif;
+  }
+.main button {
+  font: italic normal normal 15px/normal "Courier New", Courier, monospace;
+  font-weight: bolder; 
+  border: black;
+  border-radius: 7px;
+  box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.4) ;
+  background-color: rgba(0,0,0,0);
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 122px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  color: white;
+  border: 1px solid white;
+  width: 200px;
+}
+
+.main button:hover {
+  background-color: rgba(0,0,0,0.1);
+  color: white;
+}
+
+p{
+  font: italic normal normal 25px/normal "Courier New", Courier, monospace;
+  font-size: 2em;
+  color: white ;
+}
+.main{
+    border: 1px solid white;
+    width: 500px;
+    font-size: 1em;
+    padding-left: 70px;
+    padding-bottom: 40px; 
+  margin-top: 3% ;
+  margin-left: 50%;
+  border-radius: 100px;
+  background-color: rgba(0,0,0,0.1);
+}
+.inputfield {
+  margin-top: 6px;
+  padding: 10px 20px;
+  border: 1px solid white;
+  font: italic normal normal 25px/normal "Courier New", Courier, monospace;
+  width: 400px;
+  height: 30px;
+  border-radius: 7px;
+  box-shadow: 5px 5px 8px 2px rgba(0,0,0,0.4) ;
+  background: rgba(0,0,0,0);
+  color: white;
+}
+
+.inputfield:focus {
+  background: rgba(0,0,0,0);
+  color: white;
+
+}
+::placeholder{
+  color: white;
+}
+.sign{
+  width: 400px;
+  height: 100px;
+  color: white;
+  font: italic normal normal 60px/normal "Courier New", Courier, monospace;
+  font-weight: 500;
+}
+.anchor
+{  margin-left: 230px;
+  text-align: left;
+  text-decoration: none;
+  color: white;
+  font-weight:bold;
+  font-size: 1.2em; 
+}
